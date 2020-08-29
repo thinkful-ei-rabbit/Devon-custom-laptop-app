@@ -1,5 +1,5 @@
 import React from 'react';
-// import CartTotal from './CartTotal';
+import CartTotal from './CartTotal';
 import CartSummary from './CartSummary';
 
 
@@ -11,7 +11,7 @@ export default function Cart (props) {
       <div className="summary__total">
         <div className="summary__total__label">Total</div>
         <div className="summary__total__value">
-          {/* <CartTotal props={props} /> */} $100,000.00
+          <CartTotal selected={props.selected} />
         </div>
       </div>
     </section>

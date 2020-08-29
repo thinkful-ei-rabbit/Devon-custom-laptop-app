@@ -7,8 +7,8 @@ export default function CartTotal (props) {
     currency: 'USD'
   });
 
-  const total = Object.keys(this.props.selected).reduce(
-    (acc, curr) => acc + this.props.selected[curr].cost,
+  const total = Object.keys(props.selected).reduce(
+    (acc, curr) => acc + props.selected[curr].cost,
     0
   );
   return USCurrencyFormat.format(total)
