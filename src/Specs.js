@@ -1,6 +1,5 @@
 import React from 'react'
-// import Features from './Features'
-
+import Parts from './Parts'
 
 export default function Specs (props) { 
   const features = Object.keys(props.features).map((feature, idx) => {
@@ -12,8 +11,7 @@ export default function Specs (props) {
             {featureHash}
           </h3>
         </legend>
-        options
-        {/* <Features features={props.features} selected={props.selected} updateFeature={props.updateFeature}/> */}
+        <Parts features={props.features} selected={props.selected} updateFeature={props.updateFeature} feature={feature}/>
       </fieldset>
     );
   });
